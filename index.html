@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+    <script src="main.js"></script>
+    <div class="topnav">
+        <a class="active" href="#">Pizzeria</a>
+        <div class="topnav-right">
+        <a href="#viewblock">View Menu</a>
+        <a href="#addTopings">Add Toppings</a>
+        <a href="#map">Find Us Here</a>
+        </div>
+    </div>
+    <div class="row" id="viewblock">
+        <div class="img_div"> 
+            <img class="img-responsive" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGDeYneZrcBreeIcLLWmXCUuYqcjRuiDo8ULQ2URfp93aTK5fT1ALygIHzHZ5ZjDW9MmA:https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg&usqp=CAU">
+        </div>
+        <div class="menu_div">
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+           <div id="display_menu"></div>
+        </div>
+    </div>
+    <div class="newRow" id="addTopings">
+        <div class="block1">
+            <input id="addinput" placeholder="Type here to Suggest A Pizza"> <br><br>
+			<button class= "btn btn-success" onclick="add_top()">Add Pizza Suggestion</button><br><br>
+        </div>
+		
+        <div class="block2">
+            <div id="display_addedmenu">
+            </div>
+        </div>
+        
+    </div>
+<br>
+<div id="map">
+    <h2>Find Us Here</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.2179013794653!2d-88.20880432123717!3d41.65103381611297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ef5cb99955555%3A0x726bd8ab1f5d3476!2sRosati&#39;s%20Pizza%20of%20Plainfield%20North!5e0!3m2!1sen!2sus!4v1705875513805!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</body>
+</html>
